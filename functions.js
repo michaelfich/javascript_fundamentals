@@ -9,8 +9,8 @@
 // outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
 // Call that function 3 times with 3 different values for the arguments.
 function tellFortune(children, partner, place, job) {
-  document.write("<p>You will be a " + job + " in " + place +
-    ", and married to " + partner + " with " + children + " kids.</p>");
+  output("You will be a " + job + " in " + place +
+    ", and married to " + partner + " with " + children + " kids.");
 }
 tellFortune(6, "Barbara Bush", "Texas", "Cowboy");
 tellFortune(3, "Beyonce", "New York", "Janitor");
@@ -30,7 +30,7 @@ function calculateAge(birthYear, currentYear) {
     currentYear - birthYear,
     currentYear - birthYear - 1
   ];
-  document.write("<p>They are either " + ages[0] +" or " + ages[1] + "</p>");
+  output("They are either " + ages[0] +" or " + ages[1]);
 }
 // Call the function three times with different sets of values.
 // Bonus: Figure out how to get the current year in JavaScript instead of passing it in.
@@ -50,9 +50,7 @@ calculateAge(2000);
 function calculateSupply(age, quantity) {
   var maxAge = 75;
   var total = (maxAge - age) * (quantity * 365);
-  console.log(total);
-  document.write("<p>You will need " + Math.round(total) +
-    " to last you until the ripe old age of " + maxAge + "</p>");
+  output("You will need " + Math.round(total) + " to last you until the ripe old age of " + maxAge);
 }
 // Call that function three times, passing in different values each time.
 // Bonus: Accept floating point values for amount per day, and round the result to a round number.
@@ -69,7 +67,7 @@ calculateSupply(18, 2.1);
 // Calculate the circumference based on the radius, and output "The circumference is NN".
 function calcCircumfrence(radius) {
   var circumference = 2 * Math.PI * radius;
-  document.write("<p>The circumference is " + circumference + "</p>");
+  output("The circumference is " + circumference);
 }
 
 calcCircumfrence(25);
@@ -81,7 +79,7 @@ calcCircumfrence(45.5);
 // Calculate the area based on the radius, and output "The area is NN".
 function calcArea(radius) {
   var area = Math.PI * Math.pow(radius, 2);
-  document.write("<p>The area is " + area + "</p>");
+  output("The area is " + area);
 }
 
 calcArea(25);
@@ -97,7 +95,7 @@ calcArea(45.5);
 // Convert it to fahrenheit and output "NN°C is NN°F".
 function celsiusToFahrenheit(celsius) {
   var fahrenheit = celsius * 9 / 5 + 32;
-  document.write("<p>" + celsius + "&deg;C is " + fahrenheit + "&deg;F</p>");
+  output(celsius + "&deg;C is " + fahrenheit + "&deg;F");
 }
 
 celsiusToFahrenheit(0);
@@ -110,7 +108,7 @@ celsiusToFahrenheit(65);
 
 function fahrenheitToCelsius(fahrenheit) {
   var celsius = (fahrenheit - 32) * 5 / 9;
-  document.write("<p>" + fahrenheit + "°F is " + celsius + "°C.</p>");
+  document.write(fahrenheit + "°F is " + celsius + "°C.");
 }
 
 fahrenheitToCelsius(32);

@@ -14,8 +14,8 @@ function greaterNum(one, two) {
   }
 }
 
-document.write("<p>" + greaterNum(5, 9) + " is the biggest number in the first pair</p>")
-document.write("<p>" + greaterNum(18, 9) + " is the biggest number in the first pair</p>")
+output(greaterNum(5, 9) + " is the biggest number in the first pair")
+output(greaterNum(18, 9) + " is the biggest number in the first pair")
 
 // EXERCISE: The World Translator
 
@@ -37,10 +37,10 @@ function helloWorld(language) {
   }
 }
 
-document.write("<p>English: " + helloWorld("en") + "</p>");
-document.write("<p>Spanish: " + helloWorld("es") + "</p>");
-document.write("<p>French: " + helloWorld("fr") + "</p>");
-document.write("<p>German: " + helloWorld("de") + "</p>");
+output("English: " + helloWorld("en"));
+output("Spanish: " + helloWorld("es"));
+output("French: " + helloWorld("fr"));
+output("German: " + helloWorld("de"));
 
 // EXERCISE: The Grade Assigner
 
@@ -49,23 +49,23 @@ document.write("<p>German: " + helloWorld("de") + "</p>");
 // returns a grade for the score, either "A", "B", "C", "D", or "F".
 // Call that function for a few different scores and log the result to make sure it works.
 function assignGrade(number) {
-  if (number >= 80) {
+  if (number >= 90) {
     return "A";
-  } else if (number >= 70) {
+  } else if (number >= 80) {
     return "B";
-  } else if (number >= 60) {
+  } else if (number >= 70) {
     return "C";
-  } else if (number >= 50) {
+  } else if (number >= 60) {
     return "D";
   } else {
     return "F";
   }
 }
-document.write("<p>Grade: " + assignGrade(53) + "</p>")
-document.write("<p>Grade: " + assignGrade(82) + "</p>")
-document.write("<p>Grade: " + assignGrade(13) + "</p>")
-document.write("<p>Grade: " + assignGrade(79) + "</p>")
-document.write("<p>Grade: " + assignGrade(65) + "</p>")
+output("Grade: " + assignGrade(53))
+output("Grade: " + assignGrade(82))
+output("Grade: " + assignGrade(64))
+output("Grade: " + assignGrade(79))
+output("Grade: " + assignGrade(98))
 
 // EXERCISE: The Pluralizer
 
@@ -100,9 +100,9 @@ function pluralize(noun, number) {
   }
   return result;
 }
-document.write("<p>" + pluralize("cat", 3) + "</p>");
-document.write("<p>" + pluralize("dog", 1) + "</p>");
-document.write("<p>" + pluralize("mouse", 4) + "</p>");
-document.write("<p>" + pluralize("sine", 2) + "</p>");
-document.write("<p>" + pluralize("goose", 5) + "</p>");
+output(pluralize("cat", 3));
+output(pluralize("dog", 1));
+output(pluralize("mouse", 4));
+output(pluralize("sine", 2));
+output(pluralize("goose", 5));
 
